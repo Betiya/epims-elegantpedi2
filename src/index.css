@@ -1,0 +1,13 @@
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; margin: 0; }
+body {
+  background-color: #F5F5F5;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: none;
+}
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-thumb { background: #ccc; border-radius: 3px; }
+
+@media print {
+  header, nav, .MuiBottomNavigation-root, .MuiAppBar-root { display: none !important; }
+}
