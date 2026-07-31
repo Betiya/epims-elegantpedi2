@@ -63,7 +63,9 @@ export const Dashboard: React.FC = () => {
 
       <Typography variant="h6" sx={{ mt: 4, mb: 1.5 }}>Quick Actions</Typography>
       <Stack direction="row" spacing={1} flexWrap="wrap" useFlexGap>
-        <Chip label="Create supplier order" onClick={() => navigate('/supplier-orders')} sx={{ bgcolor: '#000', color: '#fff', px: 1 }} />
+        <Chip label="New sale" onClick={() => navigate('/pos')} sx={{ bgcolor: '#000', color: '#fff', px: 1 }} />
+        <Chip label="Create supplier order" onClick={() => navigate('/supplier-orders')} variant="outlined" sx={{ px: 1 }} />
+        <Chip label="New client order" onClick={() => navigate('/client-orders')} variant="outlined" sx={{ px: 1 }} />
         <Chip label="Add stock" onClick={() => navigate('/inventory')} variant="outlined" sx={{ px: 1 }} />
         <Chip label="Record payment" onClick={() => navigate('/payments')} variant="outlined" sx={{ px: 1 }} />
         <Chip label="View reports" onClick={() => navigate('/reports')} variant="outlined" sx={{ px: 1 }} />

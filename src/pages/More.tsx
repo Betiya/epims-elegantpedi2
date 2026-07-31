@@ -5,8 +5,12 @@ import PaymentsOutlinedIcon from '@mui/icons-material/PaymentsOutlined';
 import AssessmentOutlinedIcon from '@mui/icons-material/AssessmentOutlined';
 import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
+import ReceiptLongOutlinedIcon from '@mui/icons-material/ReceiptLongOutlined';
+import PointOfSaleOutlinedIcon from '@mui/icons-material/PointOfSaleOutlined';
 
 const ITEMS = [
+  { label: 'New Sale', path: '/pos', icon: <PointOfSaleOutlinedIcon /> },
+  { label: 'Client Orders', path: '/client-orders', icon: <ReceiptLongOutlinedIcon /> },
   { label: 'Payments', path: '/payments', icon: <PaymentsOutlinedIcon /> },
   { label: 'Reports', path: '/reports', icon: <AssessmentOutlinedIcon /> },
   { label: 'Notifications', path: '/notifications', icon: <NotificationsNoneOutlinedIcon /> },
