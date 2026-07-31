@@ -9,6 +9,8 @@ import { Login } from './pages/Login';
 import { Dashboard } from './pages/Dashboard';
 import { Inventory } from './pages/Inventory';
 import { SupplierOrders } from './pages/SupplierOrders';
+import { ClientOrders } from './pages/ClientOrders';
+import { PointOfSale } from './pages/PointOfSale';
 import { Packaging } from './pages/Packaging';
 import { Payments } from './pages/Payments';
 import { Reports } from './pages/Reports';
@@ -38,6 +40,8 @@ const AppRoutes: React.FC = () => (
       <Route path="/" element={<Dashboard />} />
       <Route path="/inventory" element={<Inventory />} />
       <Route path="/supplier-orders" element={<SupplierOrders />} />
+      <Route path="/client-orders" element={<ClientOrders />} />
+      <Route path="/pos" element={<PointOfSale />} />
       <Route path="/packaging" element={<Packaging />} />
       <Route path="/payments" element={<Payments />} />
       <Route path="/reports" element={<Reports />} />

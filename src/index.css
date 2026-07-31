@@ -10,4 +10,8 @@ body {
 
 @media print {
   header, nav, .MuiBottomNavigation-root, .MuiAppBar-root { display: none !important; }
+  body * { visibility: hidden; }
+  #receipt-print-area, #receipt-print-area * { visibility: visible; }
+  #receipt-print-area { position: absolute; top: 0; left: 0; width: 100%; }
+  .MuiDialog-root { position: absolute !important; }
 }
